@@ -8,7 +8,7 @@ xyz.setAttribute('class', 'robot');
 tr.createWriteStream('title').end('TITLE TEXT!!!!!!');
 
 var fs = require('fs');
-fs.createReadStream('000_index.html')
+fs.createReadStream('005_index.html')
     .pipe(tr).pipe(process.stdout)
 ;
 
