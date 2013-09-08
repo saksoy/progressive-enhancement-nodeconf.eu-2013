@@ -11,6 +11,7 @@
     "level-assoc": "~0.12.0",
     "render-assoc": "~0.0.0",
     "ecstatic": "~0.4.8",
-    "shoe": "~0.0.15"
+    "brfs": "~0.0.7",
+    "browserify": "~2.29.1"
   }
 }
