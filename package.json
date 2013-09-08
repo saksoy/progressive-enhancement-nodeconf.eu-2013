@@ -7,6 +7,8 @@
     "hyperglue": "~1.3.0",
     "hyperspace": "~0.3.4",
     "hyperkey": "~0.0.1",
+    "level": "~0.15.0",
+    "level-sublevel": "~5.1.1",
     "level-track": "~0.1.0",
     "level-assoc": "~0.12.0",
     "render-assoc": "~0.0.0",
