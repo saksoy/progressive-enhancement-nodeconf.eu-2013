@@ -34,5 +34,5 @@ hs.end({
     author: 'substack'
 });
 
-// browserify -t brfs 150_browser.js -o static/bundle.js
+// browserify -t brfs 160_browser.js -o static/bundle.js
 // xdg-open static/index.html
