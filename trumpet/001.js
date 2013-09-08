@@ -1,0 +1,2 @@
+var trumpet = require('trumpet');
+
