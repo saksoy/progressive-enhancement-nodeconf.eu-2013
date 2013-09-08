@@ -13,6 +13,7 @@ setInterval(function () {
         var word = words[Math.floor(Math.random() * words.length)];
         body.push(word);
     }
-    var key = 'message-' + who + '-' + Math.random(Math.random() * 3);
+    var time = Date.now();
+    var key = 'message-' + time;
     db.put(key, { who: 'substack', time: Date.now(), body: body.join(' ') });
 }, 1000);
