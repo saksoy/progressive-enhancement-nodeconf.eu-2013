@@ -5,7 +5,10 @@ var html = fs.readFileSync(__dirname + '/300_hackerspace.html');
 module.exports = function () {
     return hyperkey(html, function (row) {
         return {
-            '.name': row.name
+            '.name': {
+                _text: row.name,
+                href: '/' + row.name
+            }
         };
     });
 };

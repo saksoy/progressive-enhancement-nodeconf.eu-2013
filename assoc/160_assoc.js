@@ -33,7 +33,7 @@ setInterval(function () {
     var name = 'x' + Math.floor(Math.random() * Math.pow(16, 8)).toString(16);
     db.put(name, { type: 'hackerspace', name: name });
     spaces.push(name);
-}, 5000);
+}, 10 * 1000);
 
 setInterval(function () {
     // create new tool usage

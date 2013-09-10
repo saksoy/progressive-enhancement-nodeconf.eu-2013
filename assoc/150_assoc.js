@@ -22,7 +22,7 @@ setInterval(function () {
 
 setInterval(function () {
     // create a new hackerspace
-}, 5000);
+}, 10 * 1000);
 
 setInterval(function () {
     // create new tool usage

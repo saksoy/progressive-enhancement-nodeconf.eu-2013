@@ -6,7 +6,10 @@ var hacker = require('./420_hacker.js');
 module.exports = function () {
     return hyperkey(html, function (row) {
         return {
-            '.name': row.name,
+            '.name': {
+                _text: row.name,
+                href: '/' + row.name
+            },
             '.hackers': (function (stream) {
                 // ...
             })(row.hackers())
