@@ -11,7 +11,7 @@
     "level-sublevel": "~5.1.1",
     "level-track": "~0.1.0",
     "level-assoc": "~0.12.0",
-    "render-assoc": "~0.0.0",
+    "render-assoc": "~0.0.1",
     "ecstatic": "~0.4.8",
     "brfs": "~0.0.7",
     "browserify": "~2.29.1"

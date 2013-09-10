@@ -4,7 +4,10 @@ var trumpet = require('trumpet');
 var ecstatic = require('ecstatic')(__dirname + '/static');
 
 var assoc = require('./160_assoc.js');
-var render = require('./370_hackerspace.js');
+var render = {
+    hackerspace: require('./370_hackerspace.js'),
+    hacker: require('./420_hacker.js')
+};
 
 var shoe = require('shoe');
 var sock = shoe(function (stream) {
@@ -20,7 +23,7 @@ var server = http.createServer(function (req, res) {
         elem.setAttribute('data-start', q.startKey);
         elem.setAttribute('data-end', q.endKey);
         
-        q.pipe(render()).pipe(elem.createWriteStream());
+        q.pipe(render.hackerspace()).pipe(elem.createWriteStream());
         fs.createReadStream('550_index.html').pipe(tr).pipe(res);
     }
     else if (!/\./.test(req.url)) {
@@ -30,7 +33,7 @@ var server = http.createServer(function (req, res) {
         var key = req.url.replace(/^\//, '');
         assoc.get(key, function (err, value) {
             if (err) res.end(err + '\n');
-            var r = render();
+            var r = render.hackerspace();
             r.pipe(ws);
             r.end({ key: key, value: value });
         });
@@ -40,6 +43,3 @@ var server = http.createServer(function (req, res) {
 });
 server.listen(5000);
 sock.install(server, '/sock');
-
-// node 840_server.js
-// http://localhost:5000

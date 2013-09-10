@@ -12,4 +12,10 @@ h1 {
   color: white;
   margin-bottom: 4px;
   margin-right: 2px;
+  cursor: pointer;
+}
+
+.hacker:hover {
+  background-color: rgb(200,200,200);
+  color: rgb(40,40,40);
 }
