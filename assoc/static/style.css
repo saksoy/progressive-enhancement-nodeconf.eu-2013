@@ -2,6 +2,10 @@ h1 {
   color: rgb(150,150,150);
 }
 
+.hide {
+  display: none;
+}
+
 .hacker {
   display: inline-block;
   width: 80px;
