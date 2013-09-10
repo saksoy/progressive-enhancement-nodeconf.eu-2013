@@ -1,6 +1,6 @@
 var level = require('level');
 var sub = require('level-sublevel');
-var db = sub(level('/tmp/assoc-data.db'));
+var db = sub(level('/tmp/assoc.db', { valueEncoding: 'json' }));
 
 var rows = require('./115_data.json');
 
