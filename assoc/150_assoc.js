@@ -18,7 +18,7 @@ db.batch(rows.map(function (row) {
 
 setInterval(function () {
     // create a new hacker
-}, 2000);
+}, 500);
 
 setInterval(function () {
     // create a new hackerspace

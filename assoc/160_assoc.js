@@ -26,7 +26,7 @@ setInterval(function () {
     var space = spaces[Math.floor(Math.random() * spaces.length)];
     db.put(name, { type: 'hacker', name: name, hackerspace: space });
     hackers.push(name);
-}, 2000);
+}, 500);
 
 setInterval(function () {
     // create a new hackerspace
